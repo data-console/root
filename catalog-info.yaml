@@ -1,0 +1,24 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: domain-1
+  description: Everything about Domain 1
+spec:
+  owner: guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: domain-2
+  description: Everything about Domain 2
+spec:
+  owner: guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: domain-3
+  description: Everything about Domain 3
+spec:
+  owner: guests

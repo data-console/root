@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infra-cloud
+spec:
+  destination:
+    name: ''
+    namespace: infra-cloud
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: cloud
+    repoURL: 'https://github.com/data-console/infra'
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated: null
+    syncOptions:
+      - CreateNamespace=true
